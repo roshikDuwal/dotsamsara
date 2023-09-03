@@ -11,6 +11,7 @@
     <script defer src="./index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,16 +20,6 @@
 </head>
 
 <body>
-
-    <!-- /* ===============================
-    Header Section Start
-    ================================= */ -->
-
-
-
-
-
-
 
     <!-- /* ===============================
     MAIN Section Start
@@ -45,8 +36,8 @@
                     <li><a href="#mainhero" class="navbar-link home-link hover-underline-animation">Home</a></li>
                     <li><a href="#aboutus" class="navbar-link about-link hover-underline-animation">About</a></li>
                     <li> <a href="#service" class="navbar-link service-link hover-underline-animation">Service</a></li>
-                    <!-- <li> <a href="#" class="navbar-link portfolio-link hover-underline-animation">Portfolio</a></li> -->
-                    <li><a href="#client" class="navbar-link contact-link hover-underline-animation">Client</a></li>
+       
+                    <li><a href="#client" class="navbar-link client-link hover-underline-animation">Client</a></li>
                     <li><a href="#contact" class="navbar-link contact-link hover-underline-animation">Contact</a></li>
                 </ul>
 
@@ -66,9 +57,9 @@
                 <ion-icon class="mobile-navbar-icon" name="menu-outline"></ion-icon>
                 <ion-icon class="mobile-navbar-icon" name="close-outline"></ion-icon>
             </div>
-
-
         </header>
+
+
 
         <video loop muted autoPlay="autoplay" playsInline class='back-video'>
             <source src="./video/homevideo.mp4" type="video/mp4" />
@@ -81,7 +72,7 @@
                     <h1 class="main-heading">Digital Solutions that Drives Success</h1>
 
                     <div>
-                        <a href="#" class="btn hireme-btn">Our Services <ion-icon name="chevron-forward-outline"
+                        <a href="#service" class="btn hireme-btn">Our Services <ion-icon name="chevron-forward-outline"
                                 class="hirebtn-icon"></ion-icon></a>
                     </div>
                 </div>
@@ -230,7 +221,7 @@
         </div>
 
         <div class="section-contact-main contact-container">
-            <form onsubmit="sendEmail(); reset(); return false;">
+            <form onsubmit="">
                 <div class="grid grid-two-column">
                     <div>
                         <label for="username"></label>
@@ -241,14 +232,17 @@
                         <input type="email" name="email" placeholder="Email" id="email">
                     </div>
                 </div>
+
                 <div>
                     <label for="subject"></label>
                     <input type="text" name="subject" placeholder="subject" id="subject">
                 </div>
+
                 <div>
                     <label for="textarea"></label>
                     <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
                 </div>
+
                 <div>
                     <input type="submit" name="submit" id="submit" class="btn" value="send message">
                 </div>
@@ -300,50 +294,22 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="f-social-icons">
+            <a href="https://www.linkedin.com/in/roshik-duwal-b9546a23b/" target="_blank"><ion-icon class="icons"
+                    name="logo-linkedin"></ion-icon> </a>
+            <a href="https://www.instagram.com/roshik_08/" target="_blank"><ion-icon class="icons"
+                    name="logo-instagram"></ion-icon> </a>
+            <a href="https://www.facebook.com/roseek.duwal.92" target="_blank"><ion-icon class="icons"
+                    name="logo-facebook"></ion-icon> </a>
+        </div>
 
-            <div class="f-social-icons">
-                <a href="https://www.linkedin.com/in/roshik-duwal-b9546a23b/" target="_blank"><ion-icon class="icons"
-                        name="logo-linkedin"></ion-icon> </a>
-                <a href="https://www.instagram.com/roshik_08/" target="_blank"><ion-icon class="icons"
-                        name="logo-instagram"></ion-icon> </a>
-                <a href="https://www.facebook.com/roseek.duwal.92" target="_blank"><ion-icon class="icons"
-                        name="logo-facebook"></ion-icon> </a>
-            </div>
-
-            <div class="f-credits">
-                <p>Copyright @2022 All right reserved ||</p>
-            </div>
+        <div class="f-credits">
+            <p> Copyright &copy; <script>document.write(new Date().getFullYear())</script>All Rights Reserved ||</p>
+        </div>
     </footer>
 
-    <!-- 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
 
-            Email.send({
-    SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
 
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "roshikduwal129@gmail.com",
-                Password: "password",
-                To: 'roshin.lakhemaru@gmail.com',
-                From: document.getElementById("email").value,
-                Subject: document.getElementById("subject").value,
-                Body: "Name" + document.getElementById("username").value + "<br> Message:" + document.getElementById("textarea").value 
-            }).then(
-                message => alert(message)
-            );
-        }
-    </script> -->
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
